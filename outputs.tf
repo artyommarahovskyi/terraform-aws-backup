@@ -32,3 +32,6 @@ output "role_arn" {
   value       = local.iam_role_arn
   description = "The Amazon Resource Name (ARN) specifying the role"
 }
+output "plan_id" {
+  value = aws_backup_plan.default[0].id
+ }
